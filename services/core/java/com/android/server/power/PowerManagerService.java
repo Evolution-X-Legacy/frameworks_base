@@ -230,6 +230,12 @@ public final class PowerManagerService extends SystemService
 
     private static final int DEFAULT_BUTTON_ON_DURATION = 5 * 1000;
 
+    // Add button light timeout
+    private static final int BUTTON_ON_DURATION = 5 * 1000;
+
+    // File location for last reboot reason
+    private static final String LAST_REBOOT_LOCATION = "/data/misc/reboot/last_reboot_reason";
+
     private final Context mContext;
     private final ServiceThread mHandlerThread;
     private final Thread mWaitMpctlThread;
@@ -2185,6 +2191,7 @@ public final class PowerManagerService extends SystemService
                 final long screenOffTimeout = getScreenOffTimeoutLocked(sleepTimeout);
                 final long screenDimDuration = getScreenDimDurationLocked(screenOffTimeout);
                 final boolean userInactiveOverride = mUserInactiveOverrideFromWindowManager;
+                final int screenBrightness = mScreenBrightnessSettingDefault;
                 final long nextProfileTimeout = getNextProfileTimeoutLocked(now);
 
                 mUserActivitySummary = 0;
@@ -2192,6 +2199,12 @@ public final class PowerManagerService extends SystemService
                     nextTimeout = mLastUserActivityTime
                             + screenOffTimeout - screenDimDuration;
                     if (now < nextTimeout) {
+                        if (now > mLastUserActivityTime + BUTTON_ON_DURATION) {
+                            mButtonsLight.setBrightness(0);
+                        } else {
+                            mButtonsLight.setBrightness(screenBrightness);
+                            nextTimeout = now + BUTTON_ON_DURATION;
+                        }
                         mUserActivitySummary = USER_ACTIVITY_SCREEN_BRIGHT;
                         if (mWakefulness == WAKEFULNESS_AWAKE) {
                             int buttonBrightness;
