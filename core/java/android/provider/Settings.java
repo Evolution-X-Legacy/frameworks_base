@@ -5840,6 +5840,12 @@ public final class Settings {
         private static final Validator DISPLAY_MODE_VALIDATOR =
                 ANY_INTEGER_VALIDATOR;
 
+        /**
+         * Allow all rotations.
+         * @hide
+         */
+        public static final String ACCELEROMETER_ROTATION_ANGLES = "accelerometer_rotation_angles";
+
         /** End of Evolution X system settings**/
 
         /**
