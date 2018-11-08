@@ -711,11 +711,11 @@ public class NetworkPolicyManagerService extends INetworkPolicyManager.Stub {
         Trace.traceBegin(Trace.TRACE_TAG_NETWORK, "systemReady");
         final int oldPriority = Process.getThreadPriority(Process.myTid());
         try {
-            // Boost thread's priority during system server init
-            Process.setThreadPriority(Process.THREAD_PRIORITY_FOREGROUND);
-
             mUsageStats = LocalServices.getService(UsageStatsManagerInternal.class);
             mNetworkStats = LocalServices.getService(NetworkStatsManagerInternal.class);
+
+            // Boost thread's priority during system server init
+            Process.setThreadPriority(Process.THREAD_PRIORITY_FOREGROUND);
 
             synchronized (mUidRulesFirstLock) {
                 synchronized (mNetworkPoliciesSecondLock) {
