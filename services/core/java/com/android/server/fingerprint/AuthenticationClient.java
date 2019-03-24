@@ -62,6 +62,7 @@ public abstract class AuthenticationClient extends ClientMonitor {
     private boolean mDisplayFODView;
     private IFingerprintInscreen mExtDaemon = null;
     private final String mKeyguardPackage;
+    private FacolaView mFacola;
 
     // Receives events from SystemUI and handles them before forwarding them to FingerprintDialog
     protected IBiometricPromptReceiver mDialogReceiver = new IBiometricPromptReceiver.Stub() {
@@ -109,6 +110,7 @@ public abstract class AuthenticationClient extends ClientMonitor {
                 com.android.internal.R.bool.config_needCustomFODView);
         mKeyguardPackage = ComponentName.unflattenFromString(context.getResources().getString(
                 com.android.internal.R.string.config_keyguardComponent)).getPackageName();
+        mFacola = new FacolaView(context);
     }
 
     @Override
@@ -253,6 +255,7 @@ public abstract class AuthenticationClient extends ClientMonitor {
                 // do nothing
             }
         }
+        if(result == true) mFacola.hide();
         return result;
     }
 
@@ -281,6 +284,7 @@ public abstract class AuthenticationClient extends ClientMonitor {
                 // do nothing
             }
         }
+        mFacola.show();
         onStart();
         try {
             final int result = daemon.authenticate(mOpId, getGroupId());
@@ -330,6 +334,7 @@ public abstract class AuthenticationClient extends ClientMonitor {
             }
         }
 
+        mFacola.hide();
         onStop();
         IBiometricsFingerprint daemon = getFingerprintDaemon();
         if (daemon == null) {
