@@ -5890,6 +5890,15 @@ public final class Settings {
         public static final Validator INCREASING_RING_RAMP_UP_TIME_VALIDATOR =
                 ANY_STRING_VALIDATOR;
 
+        /**
+         * @hide
+         */
+        public static final String CUSTOM_FP_ICON = "custom_fingerprint_icon";
+
+        /** @hide */
+        private static final Validator CUSTOM_FP_ICON_VALIDATOR =
+                ANY_STRING_VALIDATOR;
+
         /** End of Evolution X system settings**/
 
         /**
@@ -5987,6 +5996,7 @@ public final class Settings {
             STATUS_BAR_TICKER_ANIMATION_MODE,
             STATUS_BAR_TICKER_TICK_DURATION,
             DISPLAY_MODE,
+            CUSTOM_FP_ICON,
         };
 
         /**
@@ -6201,6 +6211,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(INCREASING_RING);
             PRIVATE_SETTINGS.add(INCREASING_RING_START_VOLUME);
             PRIVATE_SETTINGS.add(INCREASING_RING_RAMP_UP_TIME);
+            PRIVATE_SETTINGS.add(CUSTOM_FP_ICON);
         }
 
         /**
@@ -6383,6 +6394,8 @@ public final class Settings {
             VALIDATORS.put(INCREASING_RING, INCREASING_RING_VALIDATOR);
             VALIDATORS.put(INCREASING_RING_START_VOLUME, INCREASING_RING_START_VOLUME_VALIDATOR);
             VALIDATORS.put(INCREASING_RING_RAMP_UP_TIME, INCREASING_RING_RAMP_UP_TIME_VALIDATOR);
+            VALIDATORS.put(CUSTOM_FP_ICON,
+                    CUSTOM_FP_ICON_VALIDATOR);
         }
 
         /**
