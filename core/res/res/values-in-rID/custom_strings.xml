@@ -42,12 +42,6 @@
     <string name="permlab_toggleNavigationEditor">mengontrol navigasi editor</string>
     <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_toggleNavigationEditor">Mengizinkan aplikasi untuk mengontrol editor bar navigasi.</string>
-    <!-- Gaming mode -->
-    <string name="notification_channel_gaming">Mode Permainan</string>
-    <string name="gaming_mode_notification_title">Mode Permainan hidup</string>
-    <string name="gaming_mode_notification_content">Tekan untuk mematikan mode Gaming</string>
-    <string name="gaming_mode_enabled_toast">Mode permainan dihidupkan</string>
-    <string name="gaming_mode_disabled_toast">Mode permainan dimatikan</string>
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_fakePackageSignature">Memalsukan paket tandatangan</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
