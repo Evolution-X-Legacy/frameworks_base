@@ -21,5 +21,4 @@ oneway interface ISubstratumHelperService {
     void applyBootAnimation();
     void applyShutdownAnimation();
     void applyProfile(in String name);
-    void installOverlay(in List<String> paths);
 }
