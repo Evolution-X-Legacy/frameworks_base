@@ -627,6 +627,7 @@ public class BatteryMeterView extends LinearLayout implements
         return isBigCircleBattery()
                 || getMeterStyle() == BatteryMeterDrawableBase.BATTERY_STYLE_CIRCLE
                 || getMeterStyle() == BatteryMeterDrawableBase.BATTERY_STYLE_DOTTED_CIRCLE;
+                || getMeterStyle() == BatteryMeterDrawableBase.BATTERY_STYLE_PA_CIRCLE;
     }
 
     private int getMeterStyle() {
