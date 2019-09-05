@@ -13,9 +13,9 @@
     <string name="show_fourg_title">Tampilkan 4G daripada LTE</string>
     <string name="show_fourg_summary">Mengganti indikator LTE dengan 4G di statusbar</string>
     <!-- Caffeine QS tile -->
-    <string name="quick_settings_caffeine_label">Mode Kafein</string>
-    <string name="accessibility_quick_settings_caffeine_off">Mode kafein dinonaktifkan</string>
-    <string name="accessibility_quick_settings_caffeine_on">Mode kafein diaktifkan</string>
+    <string name="quick_settings_caffeine_label">Mode Tetap Bangun</string>
+    <string name="accessibility_quick_settings_caffeine_off">Mode tetap bangun dinonaktifkan.</string>
+    <string name="accessibility_quick_settings_caffeine_on">Mode tetap bangun diaktifkan.</string>
     <!-- Heads up QS tile -->
     <string name="quick_settings_heads_up_label">Pemberitahuan yg mengambang</string>
     <string name="accessibility_quick_settings_heads_up_off">Matikan pemberitahuan mengambang</string>
