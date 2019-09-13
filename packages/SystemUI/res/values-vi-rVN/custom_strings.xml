@@ -221,5 +221,5 @@
     <string name="accessibility_quick_settings_gaming_mode_on">Chế độ Trò chơi bật</string>
     <string name="accessibility_quick_settings_gaming_mode_off">Chế độ trò chơi tắt</string>
     <!-- Text for switch default data sub in expanded CellularTile -->
-    <string name="use_data">Use %s for data</string>
+    <string name="use_data">Sử dụng %s cho dữ liệu</string>
 </resources>
