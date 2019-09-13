@@ -34,7 +34,7 @@
         <item>Mười một giờ</item>
     </string-array>
     <string-array name="type_clock_minutes">
-        <item>O’Clock</item>
+        <item></item>
         <item>Một phút</item>
         <item>Hai phút</item>
         <item>Ba phút</item>
