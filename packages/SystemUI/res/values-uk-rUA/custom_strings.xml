@@ -221,5 +221,5 @@
     <string name="accessibility_quick_settings_gaming_mode_on">Ігровий режим увімк.</string>
     <string name="accessibility_quick_settings_gaming_mode_off">Ігровий режим вимк.</string>
     <!-- Text for switch default data sub in expanded CellularTile -->
-    <string name="use_data">Use %s for data</string>
+    <string name="use_data">Використано %s даних</string>
 </resources>

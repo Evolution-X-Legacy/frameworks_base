@@ -221,5 +221,5 @@
     <string name="accessibility_quick_settings_gaming_mode_on">游戏模式开启</string>
     <string name="accessibility_quick_settings_gaming_mode_off">游戏模式关闭</string>
     <!-- Text for switch default data sub in expanded CellularTile -->
-    <string name="use_data">Use %s for data</string>
+    <string name="use_data">使用 %s 数据</string>
 </resources>
