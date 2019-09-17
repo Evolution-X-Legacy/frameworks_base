@@ -221,5 +221,5 @@
     <string name="accessibility_quick_settings_gaming_mode_on">Modalità gaming attiva</string>
     <string name="accessibility_quick_settings_gaming_mode_off">Modalità gaming disattiva</string>
     <!-- Text for switch default data sub in expanded CellularTile -->
-    <string name="use_data">Use %s for data</string>
+    <string name="use_data">Usa %s per i dati mobili</string>
 </resources>
