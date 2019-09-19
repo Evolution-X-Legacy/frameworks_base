@@ -221,5 +221,5 @@
     <string name="accessibility_quick_settings_gaming_mode_on">Modo Juego activado</string>
     <string name="accessibility_quick_settings_gaming_mode_off">Modo Juego desactivado</string>
     <!-- Text for switch default data sub in expanded CellularTile -->
-    <string name="use_data">Use %s for data</string>
+    <string name="use_data">Usar %s para datos</string>
 </resources>
