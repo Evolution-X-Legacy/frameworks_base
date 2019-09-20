@@ -221,5 +221,5 @@
     <string name="accessibility_quick_settings_gaming_mode_on">Herní režim zap.</string>
     <string name="accessibility_quick_settings_gaming_mode_off">Herní režim vyp.</string>
     <!-- Text for switch default data sub in expanded CellularTile -->
-    <string name="use_data">Use %s for data</string>
+    <string name="use_data">Použít %s pro data</string>
 </resources>
